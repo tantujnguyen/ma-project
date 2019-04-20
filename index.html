@@ -18,9 +18,34 @@
             <h2>Innehålls-<br>förteckning</h2>
             <ul>
                 <li><a href="#top">Abstract</a></li>
-                <li><a href="#introduction">Inledning</a></li>
-                <li><a href="#background">Bakgrund</a></li>
-                <li><a href="#method">Metod</a></li>
+                <li><a href="#introduction">Inledning</a>
+					<ul class="sub-menu">
+						<li><a href="#introduction-1">Problemområde</a></li>
+						<li><a href="#introduction-2">Syfte</a></li>
+						<li><a href="#introduction-3">Avgränsningar</a></li>
+					</ul>
+				</li>
+                <li><a href="#background">Bakgrund</a>
+					<ul class="sub-menu">
+						<li><a href="#background-1">Marketing Automation</a></li>
+						<li><a href="#background-2">Business Intelligence</a></li>
+						<li><a href="#background-3">SQL</a></li>
+						<li><a href="#background-4">Oracle Eloqua</a></li>
+						<li><a href="#background-5">OBIEE</a></li>
+						<li><a href="#background-6">Analys</a></li>
+						<li><a href="#background-7">Dashboard</a></li>
+						<li><a href="#background-8">Prompt</a></li>
+					</ul>
+				</li>
+                <li><a href="#method">Metod</a>
+					<ul class="sub-menu">
+						<li><a href="method-1">1 - Förstå</a></li>
+						<li><a href="method-2">2 - Designa</a></li>
+						<li><a href="method-3">3 - Testa</a></li>
+						<li><a href="method-4">4 - Optimera</a></li>
+						<li><a href="method-5">5 - Implementera</a></li>
+					</ul>
+				</li>
                 <li><a href="#result">Resultat</a></li>
                 <li><a href="#discussion">Diskussion</a></li>
                 <li><a href="#conclusion">Slutsats</a></li>
@@ -38,16 +63,20 @@
                     <h1><i class="far fa-envelope animated tada"></i> Analys och rapportering i Oracle Eloqua</h1>    
 					<br>
                     <p>
-						Data has become an important part of the modern marketing industry, and so has the reporting and analysis. With the proper amount of data, one can implement complex marketing automation solutions, however without proper reporting and analysis, it becomes impossible to see the progress and effects of Marketing Automation. 
+						Data has become an important part of the modern marketing industry, and so has the reporting and analytics. With the proper amount of data, one can implement complex Marketing Automation solutions and execute marketing tasks efficiently. However, without proper reporting and analysis, it becomes impossible to see the benefits and effectiveness of Marketing Automation. Therefore, it is of high importance to do in-depth reporting and analytics, and an interactive dashboard can be a good solution for that.
+						<br>
+						<br>
+						This project shows the process of developing a dashboard within Insight, in-built analytics in the Marketing Automation-platform, Oracle Eloqua. The result is customised to the needs of one company and is limited to showing data for e-mail marketing. With adjustments, it could work for any company that drives e-mail marketing with Oracle Eloqua.
                     </p>
                     <br>  
                 </div>
     
                 <!-- Introduction -->
-                <div class="section" id="introduction">
-                    <h2>Inledning</h2>
+                <div class="main-section">
+					<div class="section" id="introduction">
+						<h2>Inledning</h2>
                     <p>
-						De senaste åren har ordet <span class="highlight">data</span> blivit som ett modeord inom marknadsföringsbranschen - alla pratar om vikten av data, rapportering och visualisering av data, men många kan känna sig överväldigade på grund av det stora antalet alternativ som finns ute i marknaden. Dessutom kan den enorma mängden av data som genereras kännas väldigt häpnadsväckande, trots att det innebär mer leads- och kunddata för att marknadsförare ska kunna driva personalisering och automatisering av marknadsföringen. 
+						De senaste åren har ordet <span class="highlight">data</span> blivit som ett modeord inom marknadsföringsbranschen - alla pratar om vikten av data, rapportering och visualisering av data, men många kan känna sig överväldigade på grund av det stora antalet alternativ som finns ute i marknaden. Dessutom kan den enorma mängden av data som genereras kännas väldigt häpnadsväckande, trots att det innebär mer leads- och kunddata för att marknadsförare ska kunna driva effektiv personalisering och automatisering av marknadsföringen. 
 						<br>
 						<br>
 						Automatisering av marknadsföringen, också kallat <span class="highlight">Marketing Automation</span>, kan ha många fördelar för verksamheter - allt från att automatisera de monotona marknadsföringsprocesserna och flöden till och med att öka kundupplevelsen och mycket mer. Oavsett vad det kan vara för nytta, är det dock viktigt att ha tydliga mål från början, och för att kunna veta om man uppnår dem, är det ännu viktigare med rapportering och analys. Utan bra rapportering har man inte möjligheten att se vad som fungerar och vad som kan förbättras. Utan ordentlig analys kan man inte ta lämpliga beslut. Utan rapportering och analys, kan man alltså inte se att marketing automation är effektivt.
@@ -55,68 +84,89 @@
 						<br>
 						Lyckligtvis så har de flesta Marketing Automation-systemen inbyggda analysverktyg som användare kan utnyttja. Har inte MA-plattformen eget analysverktyg, finns det massor av tredjeparts BI-system (Business Intelligence), som man kan använda sig av. Varje analysverktyg har trots allt samma funktioner - statistik, kalkyl, diagram, tabeller, med mera. Här kommer <span class="highlight">dashboard</span> till hjälp för marknadsförare som underlättar analysen och övervakningen av marknadsföringsprocesserna. En dashboard översätter data till information genom grafisk representation, och på det sättet gör informationen enklare att förstå för alla i verksamheten och hjälper till att effektivisera organisationer.
                     </p>
+					</div>
+                    
                     <br>
                     <br>
-                    <h3>Problemområde</h3>
-                    <p>
-                        Det finns vissa utmaningar när det gäller bearbetning och visualisering av data för att ett företag som är slutanvändaren ska kunna dra nytta av en dashboard. Oftast visar det sig att företaget har investerat i ett bra BI- eller analysverktyg, men använder inte verktyget till fullo. Det kan bero på tids- eller kunskapsbrist. En viktig kompetens för företaget är därför att kunna tolka, analysera och visualisera data på ett begripligt sätt så att det ger rätt översikt över rätt information för rätt slutanvändare.
-                    </p>
+					<div class="section" id="introduction-1">
+						<h3>Problemområde</h3>
+						<p>
+							Det finns vissa utmaningar när det gäller bearbetning och visualisering av data för att ett företag som är slutanvändaren ska kunna dra nytta av en dashboard. Oftast visar det sig att företaget har investerat i ett bra BI- eller analysverktyg, men använder inte verktyget till fullo. Det kan bero på tids- eller kunskapsbrist. En viktig kompetens för företaget är därför att kunna tolka, analysera och visualisera data på ett begripligt sätt så att det ger rätt översikt över rätt information för rätt slutanvändare.
+						</p>
+					</div>
                     <br>
                     <br>
-                    <h3>Syfte</h3>
-                    <p>
-                        Syftet med detta arbete är att undersöka och ta fram sammanställningar för uppföljning, rapportering och optimering av e-postmarknadsföring i form av dashboard i analysverktyget, Insight, inbyggt i MA-systemet Oracle Eloqua. Resultatet av arbetet är tänkt att vara en mer långstiktig lösning som förenklar den dagliga, veckovisa och/eller månadsvisa rapporteringen av e-postutskicken och kampanjerna i företaget. 
-                    </p>
+					<div class="section" id="introduction-2">
+						<h3>Syfte</h3>
+						<p>
+							Syftet med detta arbete är att undersöka och ta fram sammanställningar för uppföljning, rapportering och optimering av e-postmarknadsföring i form av dashboard i analysverktyget, Insight, inbyggt i MA-systemet Oracle Eloqua. Resultatet av arbetet är tänkt att vara en mer långstiktig lösning som förenklar den dagliga, veckovisa och/eller månadsvisa rapporteringen av e-postutskicken och kampanjerna i företaget. 
+						</p>
+					</div>
                     <br>
                     <br>
+					<div class="section" id="introduction-3">
                     <h3>Avgränsningar</h3>
                     <p>
                         Inom Marketing Automation och Business Intelligence finns det tusentals olika system och verktyg. Detta arbete avgränsas till Oracles MA-system Eloqua och dess inbyggda analysverktyg Insight, som också kallas Oracle Business Intelligence Enterprise Edition (OBIEE). Arbetet fokuserar ytterligare på e-postmarknadsföring och KPI:er relevanta inom detta område. Resultatet av detta arbete har anpassats och tillämpats endast till en slutanvändare (ett företag), men kan användas som en allmän lösning efter lämpliga justeringar utifrån egna synvinklar och setup.
                     </p>
+					</div>
                     <br>
                 </div>
         
                 <!-- Background -->
-                <div class="section" id="background">
+                <div class="main-section">
+					<div class="section" id="background">
                     <h2>Bakgrund</h2>
                     <p>
                         För att ge en djupare förståelse till detta arbete, nedan kommer en bakgrund till ämnet, områden och förklaringar av begrepp som arbetet berör.
                     </p>
+					</div>
                     <br>
+					<div class="section" id="background-1">
                     <h3>Marketing Automation</h3>
                     <p>
                         Marketing Automation avser mjukvaruplattformar och tekniker för att effektivisera och automatisera marknadsföringen på flera kanaler online (t.ex. e-post, sociala medier, webbplatser). 
                     </p>
+					</div>
                     <br>
+					<div class="section" id="background-2">
                     <h3>Business Intelligence</h3>
                     <p>
 						Business Intelligence är ett samlingsbegrepp för tekniker och metoder för organisationer att förvandla all data som skapas och sparas i ens system till värdefull information. BI-verktyg samlar in och bearbetar stora mängder av data i realtid, och syftar till att agera som beslutstöd i form av ett analys- och rapportverktyg.
 					
 					</p>
+					</div>
 					<br>
+					<div class="section" id="background-3">
 					<h3>SQL</h3>
 					<p>
 						Structured Query Language, SQL, är ett frågespråk som används för att göra sökningar, hämta och modifera data i en databas. 
 					</p>
+					</div>
                     <br>
+					<div class="section" id="background-4">
                     <h3>Oracle Eloqua</h3>
                     <p>
                         Oracle Eloqua, en del av Oracle Marketing Cloud, är en molntjänst för B2B-företag, för automatiserad marknadsföring, leads- och kampanjhantering. Med hjälp av Eloqua kan marknadsförare följa potentiella köpare under hela köpresan och skapa riktade kampanjer via flera kanaler, såsom e-post, sociala medier, mobil (sms), webbplatser, samtidigt som att de får statistik och insikter i realtid. 
                     </p>
+					</div>
                     <br>
+					<div class="section" id="background-5">
                     <h3>OBIEE</h3>
                     <p>
                         OBIEE står för Oracle Business Intelligence Enterprise Edition, och är ett BI-verktyg som gör det enklare att skapa, hantera och distribuera rapporter och analyser av data. OBIEE hittas i Eloqua under namnet Insight.
                     </p>
+					</div>
                     <br>
-                    <h3>Analys</h3>
+					<div class="section" id="background-6">
+					<h3>Analys</h3>
                     <p>
                         Oracle definierar analys som en fråga mot organisationens data som ger användaren svar på affärsfrågor. Med hjälp av analyser kan användare utforska och interagera med informationen visuellt i tabeller, diagram, pivottabeller, med mera. När en analys bearbetas skickas begäran i form av logiska SQL-frågor till databasen. 
 						<br>
 						<br>
 						<img src="https://i.imgur.com/aaeeEQH.png" alt="" class="img-small">
 						<br>
-						Det är i fliken <strong>Criteria</strong> anger man vad som ska vara med i en analys.
+						Skapar man en analys är det först i fliken <strong>Criteria</strong> som man anger datan som ska vara med i en analys. 
                     <br><br>
                     Byggstenar för en analys är: <strong>Subject Areas</strong> (ämnesområden) och <strong>Columns</strong> (kolumner). Ett ämnesområde innehåller mappar, kolumner för mått, attribut och hierarkinivåer som representerar information om verksamheten. Ämnesområdet ligger högst i hierarkin för presentationsläget i Oracles metadatakatalog, dvs. det är det första som måste väljas när en analys ska skapas.
                     <br>
@@ -168,15 +218,19 @@
 					Utöver dessa finns också andra grafiska presentationer tillgängliga. Följande är de som användes i arbetet:
 					<ul>
 						<li><i class="fas fa-angle-right"></i> <strong>Performance Tile</strong>, presenterar ett aggregerat mätvärde</li>
-						<li><i class="fas fa-angle-right"></i> <strong>View Selector</strong>, är en drop-down lista där användare kan välja en specifik vy från sparade vyerna</li>
+						<li><i class="fas fa-angle-right"></i> <strong>View Selector</strong>, vyväljare, är en drop-down lista där användare kan välja en specifik vy från sparade vyerna</li>
 						<li><i class="fas fa-angle-right"></i> <strong>Graph</strong>, presenterar numerisk data på visuellt sätt i grafer och diagram. Här finns det flera olika typer av diagram att välja ifrån: <strong>Bar</strong> - stapeldiagram, <strong>Line</strong> - linjediagram, <strong>Pie</strong> - cirkeldiagram, med mera. Vissa av dessa har dessutom undertyper som: <strong>Stacked</strong> - staplad, <strong>Horizontal</strong> - vågrät, <strong>Vertical</strong> - lodrät, och annat.</li> 
 					</ul>
 
+					</div>
+					<div class="section" id="background-7">
                     <h3>Dashboard</h3>
                     <p>
                         En dashboard, som kallas också för infopanel, ger en fullständig vy och insikter över all information som finns i företaget och externa datakällor, enligt Oracles definition. Den består av en eller flera sidor som identiferas av flikar längst uppe, och kan inkludera flera analyser samt visa allt användare har tillgång till i systemet eller kan öppna med en webbläsare. Genom att bädda in en analys i en dashboard, kan användaren dynamiskt och grafiskt utforska flera datauppsättningar i ett enda gränssnitt.
-                    </p>       
+                    </p>  
+					</div>
 					<br>
+					<div class="section" id="background-8">
 					<h3>Prompt</h3>
 					<p>
 						Prompts används i OBIEE för att specificera data som presenteras i analyser och dashboard. Det ger slutanvändaren möjligheten att själv välja vilken data som ska visas. Det finns två typer av prompts:
@@ -185,17 +239,21 @@
 							<li><i class="fas fa-angle-right"></i> <strong>Dashboard Prompt</strong>, infopanelsfråga, skapas på dashboardnivån och kan återanvändas och läggas till i alla dashboard som innehåller samma kolumner som de specificerade i infopanelsfrågan. Infopanelsfrågor kan filtrera alla analyser i dashboarden, är interaktiva och möjliggör filtrering av data utan att behöva köra igen dashboard. </li>
 						</ul>
 					</p>
+				</div>
                 </div>
         
                 <!-- Method -->
-                <div class="section" id="method">
+                <div class="main-section">
+					<div class="section" id="method">
                     <h2>Metod</h2>
                     <p>
                         Genomförandet av arbetet presenteras genom ett enkelt arbetsflöde och redovisas mer detaljerat nedan.
                     </p>
+					
                     
                     <img src="https://i.imgur.com/FW4trNy.png" alt="" class="img-full-width">
-                
+                </div>
+					<div class="section" id="method-1">
                     <h3>1 - Förstå</h3>
                     <p>
                         Det viktigaste steget i hela arbetet var att förstå: 
@@ -206,14 +264,16 @@
                         <li><i class="fas fa-angle-right"></i> datan som hanterades.</li>
                     </ul>
                     <p>
-                         Efter ett introduktionsmöte med genomgång av företagets nuläge och detta projekt, gjorde jag en lista med företagets behov och önskemål. Genom att ha tydlig kravspecifikation, kan man fokusera på det som är det viktigaste och inte råka gå över kravramen. I detta fall hade företaget ett relativt komplex analysverktyg som inte användes fullständigt. Dessutom hanterade företaget massa data som inte analyserades regelbundet. Exempelvis, hade företaget manuellt skapat enkla rapporter i Insight i form av långa tabeller med massa kolumner, och exporterat filerna till Excel eller i PDF-format. Detta är ingen tidseffektiv lösning, eftersom varje gång en rapport ska skapas, måste användaren välja ut och filtrera ut den relevanta datan som ska finnas med i rapporten. Oftast hade företaget därför dragit ut generella rapporter och utgått från dem istället, vilket är inte heller ett effektivt sätt att analysera data. 
+                         Efter ett introduktionsmöte med genomgång av företagets nuläge och detta projekt, gjorde jag en lista med företagets behov och önskemål. Genom att ha tydlig kravspecifikation, kan man fokusera på det som är det viktigaste och inte råka gå över kravramen. I detta fall hade företaget ett relativt komplex analysverktyg som inte användes fullständigt. Exempelvis, hade företaget manuellt skapat enkla rapporter i Insight i form av långa tabeller med massa kolumner, och exporterat filerna till Excel eller i PDF-format. Detta är ingen tidseffektiv lösning, eftersom varje gång en rapport ska skapas, måste användaren välja ut och filtrera ut den relevanta datan som ska finnas med i rapporten. Oftast hade företaget därför dragit ut generella rapporter och utgått från dem istället, vilket är inte heller ett effektivt sätt att analysera data. 
 						<br>
 						<br>
 						Företaget använde ett av Oracles system, Eloqua, som används oftast av medelstora till stora företag, just för att Eloqua ger stora möjligheter till avancerade lösningar inom Marketing Automation. Komplexa lösningar resulterar oftast i enorma mängder data, som Oracles servrar och databaser hanterar dagligen. Till följd av detta sätts vissa krav på företagen som använder systemet - det ska råda ordning och struktur i hur datan samlas och sparas i systemet. Att ha strukturerad data är inte bara bra för Oracle, men också för själva företagen - det handlar om effektivitet, relevans, och sammanhållning, dvs. att alla i företaget har tillgång till samma data, och kan snabbt och enkelt hitta det som behövs. Företaget förde därför egen intern dokumentation om Eloqua över hantering och kartläggning av data, som jag också fick tillgång till för att kunna förstå deras datamodeller och riktlinjer.
 						<br><br>
 						Eftersom systemet är relativt avancerat krävs det dessutom tillräckligt djup förståelse i hur systemet fungerar och hur man kan skapa de komplexa automatiserade flöden. Oracle har därför en stor bibliotek med all dokumentation om sina system. I detta projekt hade dokumentationen om Insight/OBIEE spelat störst roll - allt om hur man skapar analyser och dashboard. Detta var en stor hjälp till att kunna gå vidare till nästa steg - design av analyser och dashboard.
                     </p>
+					</div>
                     <br>
+					<div class="section" id="method-2">
                     <h3>2 - Designa</h3>
                     <p>
 						Att designa en dashboard är inte lätt, då det handlar inte bara om det visuella, men för det mesta om relevans - att på enkelt och kortfattat sätt presentera relevant information för användaren. Därför är det viktigt att man har förstått och definierat syftet med en dashboard. Företaget i frågan behövde ha dashboard för rapportering och analys av skickade kampanjerna - en analytisk dashboard där målet är att kommunicera viktig information och trender som driver beslutstagande.
@@ -225,21 +285,28 @@
 						Komplexa SQL-frågor kan ha prestandaeffekter.
                         Upplägget av dashboard och data som skulle vara med på dashboarden började jag skissa först på papper för att få en överblick över vilka analyser som jag behövde att förbereda. Därefter skapade jag dem i systemet. Däremellan hade jag använt mig av söktjänster på webben för att leta efter grafisk inspiration och exempel på dashboard. Under hela design steget följde jag de designriktlinjer för en bra dashboard som tydligt ska kommunicera nyckelinformation och nyckeltal till användare, och vara lättillgänglig och användarvänlig.
                     </p>
+					</div>
                     <br>
+					<div class="section" id="method-3">
                     <h3>3 - Testa</h3>
                     <p>
 						Ett steg som inte kan bortses är testning. Varje ändring av analyser och dashboard innebär att ändringen måste testas i fall den inte skulle fungera. Därför en kontinuerlig iteration av tester genomfördes för att se till att allt fungerade som det skulle.
                     </p>
+					</div>
                     <br>
+					<div class="section" id="method-4">
                     <h3>4 - Optimera</h3>
                     <p>
-                        Beroende på tester och feedback från företaget, analyser och infopaneler optimerades för att uppnå önskemålet, alternativt för att förbättra resultatet.                     
+                        Beroende på tester och feedback från företaget, analyser och infopaneler optimerades för att uppnå önskemålet, alternativt för att förbättra resultatet.                 
 					</p>
+					</div>
                     <br>
+					<div class="section" id="method-5">
                     <h3>5 - Implementera</h3>
                     <p>
 						Sista steget var att sätta igång dashboard.
 					</p>
+					</div>
                     <br>
                 </div>
 
@@ -461,7 +528,7 @@
                         </div>
                         <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
                         <div class="desc">
-							<p>En stapel-linjediagram med öppningsgrad mellan de olika e-postadressdomänerna, sorterat i storleksordning av det totala antalet utskick.</p>
+							<p>En stapel-linjediagram med öppningsgrader mellan de olika e-postadressdomänerna, sorterat i storleksordning av det totala antalet utskick.</p>
                         </div>
                     </div>
                     <div class="present">
