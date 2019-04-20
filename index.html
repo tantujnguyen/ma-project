@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analys och rapportering i Insight</title>   
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+</head>
+<body>    
+        <!-- Navigation -->
+        <div id="menu">
+            <h2>Innehålls-<br>förteckning</h2>
+            <ul>
+                <li><a href="#top">Abstract</a></li>
+                <li><a href="#introduction">Inledning</a></li>
+                <li><a href="#background">Bakgrund</a></li>
+                <li><a href="#method">Metod</a></li>
+                <li><a href="#result">Resultat</a></li>
+                <li><a href="#discussion">Diskussion</a></li>
+                <li><a href="#conclusion">Slutsats</a></li>
+                <li><a href="#references">Referenser</a></li>
+            </ul>
+        </div>
+
+        <!-- Content panel -->
+        <div id="content">
+            <div class="menu-trigger" title="Innehållsförteckning">
+                <i class="fas fa-angle-double-right"></i>
+            </div>
+            <div class="content-inner">
+                <div class="section" id="top">
+                    <h1><i class="far fa-envelope animated tada"></i> Analys och rapportering i Oracle Eloqua</h1>    
+					<br>
+                    <p>
+						Data has become an important part of the modern marketing industry, and so has the reporting and analysis. With the proper amount of data, one can implement complex marketing automation solutions, however without proper reporting and analysis, it becomes impossible to see the progress and effects of Marketing Automation. 
+                    </p>
+                    <br>  
+                </div>
+    
+                <!-- Introduction -->
+                <div class="section" id="introduction">
+                    <h2>Inledning</h2>
+                    <p>
+						De senaste åren har ordet <span class="highlight">data</span> blivit som ett modeord inom marknadsföringsbranschen - alla pratar om vikten av data, rapportering och visualisering av data, men många kan känna sig överväldigade på grund av det stora antalet alternativ som finns ute i marknaden. Dessutom kan den enorma mängden av data som genereras kännas väldigt häpnadsväckande, trots att det innebär mer leads- och kunddata för att marknadsförare ska kunna driva personalisering och automatisering av marknadsföringen. 
+						<br>
+						<br>
+						Automatisering av marknadsföringen, också kallat <span class="highlight">Marketing Automation</span>, kan ha många fördelar för verksamheter - allt från att automatisera de monotona marknadsföringsprocesserna och flöden till och med att öka kundupplevelsen och mycket mer. Oavsett vad det kan vara för nytta, är det dock viktigt att ha tydliga mål från början, och för att kunna veta om man uppnår dem, är det ännu viktigare med rapportering och analys. Utan bra rapportering har man inte möjligheten att se vad som fungerar och vad som kan förbättras. Utan ordentlig analys kan man inte ta lämpliga beslut. Utan rapportering och analys, kan man alltså inte se att marketing automation är effektivt.
+						<br>
+						<br>
+						Lyckligtvis så har de flesta Marketing Automation-systemen inbyggda analysverktyg som användare kan utnyttja. Har inte MA-plattformen eget analysverktyg, finns det massor av tredjeparts BI-system (Business Intelligence), som man kan använda sig av. Varje analysverktyg har trots allt samma funktioner - statistik, kalkyl, diagram, tabeller, med mera. Här kommer <span class="highlight">dashboard</span> till hjälp för marknadsförare som underlättar analysen och övervakningen av marknadsföringsprocesserna. En dashboard översätter data till information genom grafisk representation, och på det sättet gör informationen enklare att förstå för alla i verksamheten och hjälper till att effektivisera organisationer.
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Problemområde</h3>
+                    <p>
+                        Det finns vissa utmaningar när det gäller bearbetning och visualisering av data för att ett företag som är slutanvändaren ska kunna dra nytta av en dashboard. Oftast visar det sig att företaget har investerat i ett bra BI- eller analysverktyg, men använder inte verktyget till fullo. Det kan bero på tids- eller kunskapsbrist. En viktig kompetens för företaget är därför att kunna tolka, analysera och visualisera data på ett begripligt sätt så att det ger rätt översikt över rätt information för rätt slutanvändare.
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Syfte</h3>
+                    <p>
+                        Syftet med detta arbete är att undersöka och ta fram sammanställningar för uppföljning, rapportering och optimering av e-postmarknadsföring i form av dashboard i analysverktyget, Insight, inbyggt i MA-systemet Oracle Eloqua. Resultatet av arbetet är tänkt att vara en mer långstiktig lösning som förenklar den dagliga, veckovisa och/eller månadsvisa rapporteringen av e-postutskicken och kampanjerna i företaget. 
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Avgränsningar</h3>
+                    <p>
+                        Inom Marketing Automation och Business Intelligence finns det tusentals olika system och verktyg. Detta arbete avgränsas till Oracles MA-system Eloqua och dess inbyggda analysverktyg Insight, som också kallas Oracle Business Intelligence Enterprise Edition (OBIEE). Arbetet fokuserar ytterligare på e-postmarknadsföring och KPI:er relevanta inom detta område. Resultatet av detta arbete har anpassats och tillämpats endast till en slutanvändare (ett företag), men kan användas som en allmän lösning efter lämpliga justeringar utifrån egna synvinklar och setup.
+                    </p>
+                    <br>
+                </div>
+        
+                <!-- Background -->
+                <div class="section" id="background">
+                    <h2>Bakgrund</h2>
+                    <p>
+                        För att ge en djupare förståelse till detta arbete, nedan kommer en bakgrund till ämnet, områden och förklaringar av begrepp som arbetet berör.
+                    </p>
+                    <br>
+                    <h3>Marketing Automation</h3>
+                    <p>
+                        Marketing Automation avser mjukvaruplattformar och tekniker för att effektivisera och automatisera marknadsföringen på flera kanaler online (t.ex. e-post, sociala medier, webbplatser). 
+                    </p>
+                    <br>
+                    <h3>Business Intelligence</h3>
+                    <p>
+						Business Intelligence är ett samlingsbegrepp för tekniker och metoder för organisationer att förvandla all data som skapas och sparas i ens system till värdefull information. BI-verktyg samlar in och bearbetar stora mängder av data i realtid, och syftar till att agera som beslutstöd i form av ett analys- och rapportverktyg.
+					
+					</p>
+					<br>
+					<h3>SQL</h3>
+					<p>
+						Structured Query Language, SQL, är ett frågespråk som används för att göra sökningar, hämta och modifera data i en databas. 
+					</p>
+                    <br>
+                    <h3>Oracle Eloqua</h3>
+                    <p>
+                        Oracle Eloqua, en del av Oracle Marketing Cloud, är en molntjänst för B2B-företag, för automatiserad marknadsföring, leads- och kampanjhantering. Med hjälp av Eloqua kan marknadsförare följa potentiella köpare under hela köpresan och skapa riktade kampanjer via flera kanaler, såsom e-post, sociala medier, mobil (sms), webbplatser, samtidigt som att de får statistik och insikter i realtid. 
+                    </p>
+                    <br>
+                    <h3>OBIEE</h3>
+                    <p>
+                        OBIEE står för Oracle Business Intelligence Enterprise Edition, och är ett BI-verktyg som gör det enklare att skapa, hantera och distribuera rapporter och analyser av data. OBIEE hittas i Eloqua under namnet Insight.
+                    </p>
+                    <br>
+                    <h3>Analys</h3>
+                    <p>
+                        Oracle definierar analys som en fråga mot organisationens data som ger användaren svar på affärsfrågor. Med hjälp av analyser kan användare utforska och interagera med informationen visuellt i tabeller, diagram, pivottabeller, med mera. När en analys bearbetas skickas begäran i form av logiska SQL-frågor till databasen. 
+						<br>
+						<br>
+						<img src="https://i.imgur.com/aaeeEQH.png" alt="" class="img-small">
+						<br>
+						Det är i fliken <strong>Criteria</strong> anger man vad som ska vara med i en analys.
+                    <br><br>
+                    Byggstenar för en analys är: <strong>Subject Areas</strong> (ämnesområden) och <strong>Columns</strong> (kolumner). Ett ämnesområde innehåller mappar, kolumner för mått, attribut och hierarkinivåer som representerar information om verksamheten. Ämnesområdet ligger högst i hierarkin för presentationsläget i Oracles metadatakatalog, dvs. det är det första som måste väljas när en analys ska skapas.
+                    <br>
+                    <img src="https://i.imgur.com/6j7ksff.png" alt="" class="img-long">
+                    <br>
+                    Kolumner innehåller de enskilda bitar av data som en analys returnerar. De har oftast namn som anger vilka typer av information de innehåller. Tillsammans med filter bestämmer kolumner vad som en analys ska visa. Det finns olika typer av kolumner som används vid olika situationer, där följande är huvudsakliga:
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-angle-right"></i> <strong>Attribute Column</strong>, attributer beskriver numerisk data, t.ex. Week Number</li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Metrics Column</strong>, mått/mätvärden visar beräknad/aggregerat data, t.ex. Total Sends</li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Hierarchical Column</strong>, hierarkinivåer är relationsuppsättningar, t.ex. hur Calendar Email Send Date innehåller år, och år innehåller månader, osv.</li>
+                    </ul>  
+                    <p>
+                        Följande är mätvärden relevanta för e-postmarknadsföring och som användes i analyser och infopaneler:
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-angle-right"></i> <strong>Total Sends</strong>, totala antalet skickade mail</li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Total Delivered</strong>, totala antalet levererade mail <span class="formula">Total Delivered = Total Sends - (Total Hard Bouncebacks + Total Soft Bouncebacks)</span></li>
+						<li><i class="fas fa-angle-right"></i> <strong>Delivery Rate</strong>, antalet levererade mail delat på antalet skickade (i procent)<br><span class="formula">Delivery Rate = Total Delivered / Total Sends</span></li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Total Hard Bouncebacks</strong>, totala antalet mail som inte kunde levereras pga <span class="highlight">hard bounce</span> </li>
+						<li><i class="fas fa-angle-right"></i> <strong>Hard Bounceback Rate</strong>, antalet hard bounces delat på antalet skickade mail (i procent)<br><span class="formula">Hard Bounceback Rate = Total hard bouncebacks / total sends</span></li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Total Soft Bouncebacks</strong>, totala antalet mail som inte kunde levereras pga <span class="highlight">soft bounce</span></li>
+						<li><i class="fas fa-angle-right"></i> <strong>Soft Bounceback Rate</strong>, antalet soft bounces delat på antalet skickade mail (i procent)<br><span class="formula">Soft Bounceback Rate = Total soft bouncebacks / total sends</span></li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Total Opens</strong>, totala antalet gånger mailet öppnades, inkluderat flera öppningar av samma användare</li>
+						<li><i class="fas fa-angle-right"></i> <strong>Open Rate (OR)</strong>, antalet öppningar delat på antalet levererade mail (i procent)<br><span class="formula">Open Rate = Total Opens / Total Delivered</span></li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Unique Opens</strong>, totala antalet användare som öppnade mailet minst en gång</li>
+						<li><i class="fas fa-angle-right"></i> <strong>Unique Open Rate</strong>, antalet unika öppninar delat på antalet levererade mail (i procent) <br><span class="formula">Unique Open Rate = Unique Opens / Total Delivered</span></li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Total Clickthroughs</strong>, totala antalet gånger någon länk i mailet klickats, inkluderat flera klick av samma användare</li>
+						<li><i class="fas fa-angle-right"></i> <strong>Clickthrough Rate (CTR)</strong>, antalet klick delat på antalet levererade mail (i procent)<br><span class="formula">Clickthrough Rate (CTR) = Total Clickthroughs / Total Delivered</span></li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Unique Clickthroughs</strong>, totala antalet användare som klickat på minst en länk i mailet</li>
+						<li><i class="fas fa-angle-right"></i> <strong>Unique Clickthrough Rate</strong>, antalet unika klick delat på antalet levererade mail (i procent) <br><span class="formula">Unique Clickthrough Rate = Unique Clickthroughs / Total Delivered</span></li>
+                        <li><i class="fas fa-angle-right"></i> <strong>Click-to-Open-Rate</strong>, (i procent)<span class="formula">Click-to-Open-Rate = Clicked Sends / Opened Sends</span>
+                            <br>
+                            Clicked Sends: antalet första klick av de ursprungliga mottagarna, exkluderat möjliga vidarebefodringar 
+                            <br>
+                            Opened Sends: antalet första öppningar för skickade mail, exkluderat möjliga vidarebefodringar</li>
+                    </ul>  
+					
+					<p>Till en analys kan användare vidare lägga till olika <strong>Views</strong> (vyer), som representerar resultaten från en analys på ett intuitivt sätt. Detta gör man i nästa flik <strong>Results</strong>.
+						<br>
+						<br>
+					<img src="https://i.imgur.com/6VBylYV.png" alt="" class="img-small">
+					<br>
+						Förinställt får man alltid:</p>
+					<ul>
+						<li><i class="fas fa-angle-right"></i> <strong>Title</strong>, presenterar namnet av den sparade analysen</li>
+						<li><i class="fas fa-angle-right"></i> <strong>Table/Pivot Table</strong>, presenterar resultaten av analysen strukturerat i rader och kolumner</li>
+					</ul>
+					Utöver dessa finns också andra grafiska presentationer tillgängliga. Följande är de som användes i arbetet:
+					<ul>
+						<li><i class="fas fa-angle-right"></i> <strong>Performance Tile</strong>, presenterar ett aggregerat mätvärde</li>
+						<li><i class="fas fa-angle-right"></i> <strong>View Selector</strong>, är en drop-down lista där användare kan välja en specifik vy från sparade vyerna</li>
+						<li><i class="fas fa-angle-right"></i> <strong>Graph</strong>, presenterar numerisk data på visuellt sätt i grafer och diagram. Här finns det flera olika typer av diagram att välja ifrån: <strong>Bar</strong> - stapeldiagram, <strong>Line</strong> - linjediagram, <strong>Pie</strong> - cirkeldiagram, med mera. Vissa av dessa har dessutom undertyper som: <strong>Stacked</strong> - staplad, <strong>Horizontal</strong> - vågrät, <strong>Vertical</strong> - lodrät, och annat.</li> 
+					</ul>
+
+                    <h3>Dashboard</h3>
+                    <p>
+                        En dashboard, som kallas också för infopanel, ger en fullständig vy och insikter över all information som finns i företaget och externa datakällor, enligt Oracles definition. Den består av en eller flera sidor som identiferas av flikar längst uppe, och kan inkludera flera analyser samt visa allt användare har tillgång till i systemet eller kan öppna med en webbläsare. Genom att bädda in en analys i en dashboard, kan användaren dynamiskt och grafiskt utforska flera datauppsättningar i ett enda gränssnitt.
+                    </p>       
+					<br>
+					<h3>Prompt</h3>
+					<p>
+						Prompts används i OBIEE för att specificera data som presenteras i analyser och dashboard. Det ger slutanvändaren möjligheten att själv välja vilken data som ska visas. Det finns två typer av prompts:
+						<ul>
+							<li><i class="fas fa-angle-right"></i> <strong>Inline Prompt</strong>, analysfråga, skapas på analysnivån, blir bunden till en analys och kan inte läggas till andra analyser. Analysfrågor filtrerar data i analysen, men analysen måste köras om om användaren vill ange andra filtreringsvärden.</li>
+							<li><i class="fas fa-angle-right"></i> <strong>Dashboard Prompt</strong>, infopanelsfråga, skapas på dashboardnivån och kan återanvändas och läggas till i alla dashboard som innehåller samma kolumner som de specificerade i infopanelsfrågan. Infopanelsfrågor kan filtrera alla analyser i dashboarden, är interaktiva och möjliggör filtrering av data utan att behöva köra igen dashboard. </li>
+						</ul>
+					</p>
+                </div>
+        
+                <!-- Method -->
+                <div class="section" id="method">
+                    <h2>Metod</h2>
+                    <p>
+                        Genomförandet av arbetet presenteras genom ett enkelt arbetsflöde och redovisas mer detaljerat nedan.
+                    </p>
+                    
+                    <img src="https://i.imgur.com/FW4trNy.png" alt="" class="img-full-width">
+                
+                    <h3>1 - Förstå</h3>
+                    <p>
+                        Det viktigaste steget i hela arbetet var att förstå: 
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-angle-right"></i> problemet, behovet och önskemålet som företaget hade, </li>
+                        <li><i class="fas fa-angle-right"></i> plattformen företaget använde, </li>
+                        <li><i class="fas fa-angle-right"></i> datan som hanterades.</li>
+                    </ul>
+                    <p>
+                         Efter ett introduktionsmöte med genomgång av företagets nuläge och detta projekt, gjorde jag en lista med företagets behov och önskemål. Genom att ha tydlig kravspecifikation, kan man fokusera på det som är det viktigaste och inte råka gå över kravramen. I detta fall hade företaget ett relativt komplex analysverktyg som inte användes fullständigt. Dessutom hanterade företaget massa data som inte analyserades regelbundet. Exempelvis, hade företaget manuellt skapat enkla rapporter i Insight i form av långa tabeller med massa kolumner, och exporterat filerna till Excel eller i PDF-format. Detta är ingen tidseffektiv lösning, eftersom varje gång en rapport ska skapas, måste användaren välja ut och filtrera ut den relevanta datan som ska finnas med i rapporten. Oftast hade företaget därför dragit ut generella rapporter och utgått från dem istället, vilket är inte heller ett effektivt sätt att analysera data. 
+						<br>
+						<br>
+						Företaget använde ett av Oracles system, Eloqua, som används oftast av medelstora till stora företag, just för att Eloqua ger stora möjligheter till avancerade lösningar inom Marketing Automation. Komplexa lösningar resulterar oftast i enorma mängder data, som Oracles servrar och databaser hanterar dagligen. Till följd av detta sätts vissa krav på företagen som använder systemet - det ska råda ordning och struktur i hur datan samlas och sparas i systemet. Att ha strukturerad data är inte bara bra för Oracle, men också för själva företagen - det handlar om effektivitet, relevans, och sammanhållning, dvs. att alla i företaget har tillgång till samma data, och kan snabbt och enkelt hitta det som behövs. Företaget förde därför egen intern dokumentation om Eloqua över hantering och kartläggning av data, som jag också fick tillgång till för att kunna förstå deras datamodeller och riktlinjer.
+						<br><br>
+						Eftersom systemet är relativt avancerat krävs det dessutom tillräckligt djup förståelse i hur systemet fungerar och hur man kan skapa de komplexa automatiserade flöden. Oracle har därför en stor bibliotek med all dokumentation om sina system. I detta projekt hade dokumentationen om Insight/OBIEE spelat störst roll - allt om hur man skapar analyser och dashboard. Detta var en stor hjälp till att kunna gå vidare till nästa steg - design av analyser och dashboard.
+                    </p>
+                    <br>
+                    <h3>2 - Designa</h3>
+                    <p>
+						Att designa en dashboard är inte lätt, då det handlar inte bara om det visuella, men för det mesta om relevans - att på enkelt och kortfattat sätt presentera relevant information för användaren. Därför är det viktigt att man har förstått och definierat syftet med en dashboard. Företaget i frågan behövde ha dashboard för rapportering och analys av skickade kampanjerna - en analytisk dashboard där målet är att kommunicera viktig information och trender som driver beslutstagande.
+						<br>
+						<br>
+						En dashboard visualiserar data genom olika grafer och diagram. Utmaningen med datavisualisering är att välja rätt diagram till rätt information. Väljer man inte korrekt, finns det stora risker att datavisualiseringen skapar förvirring och misuppfattningar hos användaren. Datan som jag fick jobba på 
+						<br>
+						<br>
+						Komplexa SQL-frågor kan ha prestandaeffekter.
+                        Upplägget av dashboard och data som skulle vara med på dashboarden började jag skissa först på papper för att få en överblick över vilka analyser som jag behövde att förbereda. Därefter skapade jag dem i systemet. Däremellan hade jag använt mig av söktjänster på webben för att leta efter grafisk inspiration och exempel på dashboard. Under hela design steget följde jag de designriktlinjer för en bra dashboard som tydligt ska kommunicera nyckelinformation och nyckeltal till användare, och vara lättillgänglig och användarvänlig.
+                    </p>
+                    <br>
+                    <h3>3 - Testa</h3>
+                    <p>
+						Ett steg som inte kan bortses är testning. Varje ändring av analyser och dashboard innebär att ändringen måste testas i fall den inte skulle fungera. Därför en kontinuerlig iteration av tester genomfördes för att se till att allt fungerade som det skulle.
+                    </p>
+                    <br>
+                    <h3>4 - Optimera</h3>
+                    <p>
+                        Beroende på tester och feedback från företaget, analyser och infopaneler optimerades för att uppnå önskemålet, alternativt för att förbättra resultatet.                     
+					</p>
+                    <br>
+                    <h3>5 - Implementera</h3>
+                    <p>
+						Sista steget var att sätta igång dashboard.
+					</p>
+                    <br>
+                </div>
+
+                <!-- Result -->
+                <div class="section" id="result">
+                    <h2>Resultat</h2>
+                    <p>
+                        Nedan presenteras och redovisas resultatet av arbetet i form av skärmdumpar av dashboarden. 
+                        Dashboard som skapades består av 4 sidor med fliknamn: <strong>Overview</strong>, <strong>Deliverability</strong>, <strong>Opens</strong>, och <strong>Clicks</strong>. Presenterat är resultaten från en kampanj.
+                    </p>
+                    <br>
+                    <!-- START Dropdowns -->
+                    <!--<div class="dropdown">
+                        <div class="select">
+                            <span>Select Email</span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <input type="hidden" name="email">
+                        <ul class="dropdown-menu">
+                            <li data-id="e1">Email 1</li>
+                            <li data-id="e2">Email 2</li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="select">
+                            <span>Select Campaign</span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <input type="hidden" name="campaign">
+                        <ul class="dropdown-menu">
+                            <li data-id="c1">Campaign 1</li>
+                            <li data-id="c2">Campaign 2</li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="select">
+                            <span>Select Week</span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <input type="hidden" name="week">
+                        <ul class="dropdown-menu">
+                            <li data-id="w1">2019-W1</li>
+                            <li data-id="w2">2019-W2</li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="select">
+                            <span>Select Month</span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <input type="hidden" name="month">
+                        <ul class="dropdown-menu">
+                            <li data-id="m1">Jan 2019</li>
+                            <li data-id="m2">Feb 2019</li>
+                        </ul>
+                    </div>-->
+                    <!-- END Dropdowns -->
+
+                    <!-- <div class="tabs">
+                        <input type="radio" name="tabs-link" id="tab1" checked="checked">
+                        <label for="tab1">Overview</label>
+                        <div class="tabs-content">
+                            <img src="" alt="">
+                        </div>
+    
+                        <input type="radio" name="tabs-link" id="tab2">
+                        <label for="tab2">Deliverability</label>
+                        <div class="tabs-content">
+                            <img src="" alt="">
+                        </div>
+    
+                        <input type="radio" name="tabs-link" id="tab3">
+                        <label for="tab3">Opens</label>
+                        <div class="tabs-content">
+                            <img src="" alt="">
+                        </div>
+    
+                        <input type="radio" name="tabs-link" id="tab4">
+                        <label for="tab4">Clicks</label>
+                        <div class="tabs-content">
+                            <img src="" alt="">
+                        </div>
+                    </div> -->
+                    <br>
+                    <!-- OVERVIEW -->
+                    <h3>1 - Overview</h3>
+					<p>
+						Tanken med första fliken <strong>Overview</strong> är att visa en översikt över det som är viktigast, visa trenderna, samt att ge användaren möjlighet att filtrera data som ska presenteras i dashboard. Resultaten uppdateras enligt användarens val i infopanelsfrågan.
+					</p>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/Mt1Korb.png" alt="" class="img-full-width">
+                        </div>                    
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+
+                        <div class="desc">
+                            <p>En infopanelsfråga ger användaren som sagt möjlighet att själv specificera vilken data som eftersökes och ska presenteras. I infopanelsfrågan <strong>Select Year, and then Month or Week</strong> kan användaren ange år, månad eller vecka för att filtrera ut resultaten och hitta data under specifik period. Flera värden kan väljas. Vill användaren följa upp resultat av en specifik kampanj- eller utskick, kan detta väljas i <strong>Select Campaign or Email</strong>. Listorna är filtrerade med SQL-frågorna för att endast returnera kampanjer och utskick som inte var tester, och i ordning med senast utskicksdatum. </p>
+							<br>
+							<p>Väljer användaren inget, visar dashboarden resultaten från allra början - det kan fungera som en generell översikt.</p>
+                            <br>
+							<p>I <strong>Select Year, and then Month or Week</strong> finns det checkboxar för år. Det är viktigt att först bocka av år som man är intresserad av, för att senare kunna välja månad eller vecka i det utvalda året. Med andra ord är listan av tillgängliga månader och veckor beroende av år.</p>
+							<br>
+                            <img src="https://i.imgur.com/05FG3JV.png" alt="" class="img-small">
+                            <br>
+                            <img src="https://i.imgur.com/jwKi4Cy.png" alt="" class="img-small">
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/1Tq8Bz7.png" alt="" class="img-full-width">
+                        </div>                    
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+
+                        <div class="desc">
+                            <p>
+								Två rader som visar de viktigaste KPI:erna, där den första i fet stil presenterar antal, och den andra grader och frekvenser i procent.
+							</p>
+                        </div>
+                    </div>
+
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/o5LdhAE.png" alt="" class="img-full-width">
+                            <img src="https://i.imgur.com/iGFAeMe.png" alt="" class="img-full-width">
+                            <img src="https://i.imgur.com/TaYrZMN.png" alt="" class="img-full-width">
+                        </div>                    
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+
+                        <div class="desc">
+                            View Selector med 3 olika vyer <strong>Send volume - Month</strong>, <strong>Send Volume - Week</strong> och <strong>Send Volume - Day</strong> som innehåller stapeldiagram av det totala antalet utskick. Varje diagram har en annan tidsintervall i x-axeln (månad/vecka/dag). Detta ger användaren möjlighet att byta till relevant vy/diagram när det behövs. 
+                        </div>
+                    </div>
+
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/T58BwGB.png" alt="" class="img-full-width">
+                            <img src="https://i.imgur.com/WDDFdsD.png" alt="" class="img-full-width">
+                            <img src="https://i.imgur.com/afObuCi.png" alt="" class="img-full-width">
+                        </div>                    
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+
+                        <div class="desc">
+							<p>
+								En vyväljare med 3 olika vyer <strong>Month</strong>, <strong>Week</strong> och <strong>Day</strong> som innehåller stapel-linjediagram av antalet och frekvens av unika öppningar och klick. Varje diagram visar resultat med en annan tidsintervall i x-axeln. Användaren har möjlighet att själv välja relevant diagram.
+							</p>
+                        </div>
+                    </div>
+
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/pZPkVT4.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+                            En tabell som sammanfattar resultaten mer detaljerat.
+                        </div>
+                    </div>
+					<br>
+                    <!-- DELIVERABILITY -->
+                    <h3>2 - Deliverability</h3>
+					<p>
+						Andra sidan <strong>Deliverability</strong> presenterar resultaten enbart kring leverensbarheten. Detta ger möjligheten för användaren att fokusera på att analysera leverensbarheten när det behövs.
+					</p>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/Uz40Xyw.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+							<p>
+								Två rader med viktiga KPI:er när man analyserar leverensbarheten av e-postutskicken. Första raden med antal, och andra med grader i procent.
+							</p>
+                        </div>
+                    </div>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/7pZY943.png" alt="" class="img-full-width">
+                            <img src="https://i.imgur.com/NUkojfV.png" alt="" class="img-full-width">
+                            <img src="https://i.imgur.com/ZnG5J3f.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+                            <p>En vyväljare med 3 vyer <strong>Month</strong>, <strong>Week</strong>, <strong>Day</strong> som innehåller staplad stapeldiagram av antal levererade utskick och bounces. Varje vy har en annan tidsintervall i x-axeln. Slutanvändaren har möjlighet att själv byta mellan vyerna/diagramen.
+							</p>
+                        </div>
+                    </div>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/4O10azh.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+                            <p>
+								En tabell som sammanfattar leverensbarheten mellan olika e-postadressdomänerna i storleksordning baserad på antal skickade mail.
+							</p>
+                        </div>
+                    </div>
+                    <!-- OPENS -->
+					<br>
+                    <h3>3 - Opens</h3>
+					<p>Nästa sida <strong>Opens</strong> presenterar data kring öppningar och möjliggör analys baserad på vilken tid/dag eller enheter som utskicken är mest öppnade. </p>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/eIUWXeF.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+							<p>Två rader med KPI:er viktiga när man analyserar öppningar.</p>
+                        </div>
+                    </div>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/9UjmWhR.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+							<p>En stapel-linjediagram med öppningsgrad mellan de olika e-postadressdomänerna, sorterat i storleksordning av det totala antalet utskick.</p>
+                        </div>
+                    </div>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/RrlwZK9.png" alt="" class="img-full-width">
+                            <img src="https://i.imgur.com/Yq36nur.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+							<p>En vyväljare med 2 vyer <strong>Hours</strong> och <strong>Weekdays</strong> som innehåller stapeldiagram med totala och unika öppningar per timme och per veckodag. </p>
+                        </div>
+                    </div>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/NmWmrQs.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+							<p>Till vänster finnes en cirkeldiagram som presenterar unika öppningar på olika typer av enheter. Till höger en stapeldiagram som visar unika öppningar i olika webbläsare sorterat baserat på det totala antalet skickade mail.</p>
+                        </div>
+                    </div>
+					<br>
+                    <!-- CLICKS -->
+                    <h3>4 - Clicks</h3>
+					<p>Fjärde och sista fliken <strong>Clicks</strong> visar data kring klick.</p>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/7LXqS4i.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+							<p>Två rader som visar KPI:er som är viktiga när man analyserar klick.</p>
+                        </div>
+                    </div>
+                    <div class="present">
+                        <div class="screen">
+                            <img src="https://i.imgur.com/fYuw67g.png" alt="" class="img-full-width">
+                        </div>
+                        <span data-close="LÄS MER" data-open="LÄS MINDRE">LÄS MER</span>
+                        <div class="desc">
+							<p>En enkel stapeldiagram som presenterar mest klickade länkar, både totala och unika.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Discussion -->
+                <div class="section" id="discussion">
+                    <h2>Diskussion</h2>
+                    <p>
+						Det första som man kan diskutera är om dashboarden
+						<br>
+                        Tillvägagångsättet var inte tydligt från början och inte heller linjärt. 
+                        Jag hade hoppat fram och tillbaka mellan stegen
+
+                    </p>
+                    <h3></h3>
+                    <p></p>
+                </div>
+                
+                <!-- Conclusion -->
+                <div class="section" id="conclusion">
+                    <h2>Slutsatser</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolores pariatur explicabo corrupti nemo quam necessitatibus quos, animi mollitia consequuntur quidem quia, quasi dolore. Aspernatur deleniti optio earum sint magnam.</p>
+                </div>
+    
+                <!-- References -->
+                <div class="section" id="references">
+                    <h2>Referenser</h2>
+                    <ul>
+						 <li>Bakusevych, Taras. 17 Jul 2018. 10 rules for better dashboard design <a href="https://uxplanet.org/10-rules-for-better-dashboard-design-ef68189d734c" target="_blank">https://uxplanet.org/10-rules-for-better-dashboard-design-ef68189d734c</a></li>
+						<li>Evelson, Boris. 21 Nov 2008. Topic Overview: Business Intelligence <a href="https://www.forrester.com/report/Topic+Overview+Business+Intelligence/-/E-RES39218" target="_blank">https://www.forrester.com/report/Topic+Overview+Business+Intelligence/-/E-RES39218</a></li>
+						<li>Hubspot. 2019. What is Marketing Automation? <a href="https://www.hubspot.com/marketing-automation-information">https://www.hubspot.com/marketing-automation-information</a></li>
+						<li>Oracle. 2015. Creating Analyses and Dashboards <a href="https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/bi/bi1221/cad/cad12c.html" target="_blank">https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/bi/bi1221/cad/cad12c.html</a></li>
+						<li>Oracle. 2019. Email Analysis Overview report <a href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAA/Help/Insight/Reports/EmailAnalysisOverview.htm" target="_blank">https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAA/Help/Insight/Reports/EmailAnalysisOverview.htm</a></li>
+						<li>Oracle. 2015, 2018. Fusion Middleware User's Guide for Oracle Business Intelligence Enterprise Edition <a href="https://docs.oracle.com/middleware/bi12214/biee/BIEUG/toc.htm" target="_blank">https://docs.oracle.com/middleware/bi12214/biee/BIEUG/toc.htm</a></li>
+                        <li>Oracle. 2019. Oracle Eloqua: Drive Dynamic Journeys <a href="https://www.oracle.com/se/marketingcloud/products/marketing-automation/" target="_blank">https://www.oracle.com/se/marketingcloud/products/marketing-automation/</a></li>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="content-footer">
+                    <span>
+                    Copyright <i class="far fa-copyright"></i> 2019, Nguyen Thanh Thuy
+                    </span>
+                </div>
+            </footer>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>-->
+
+    <script>
+        $('.desc').hide();
+        /* Menu */
+        $('.menu-trigger').click(function(){
+            $('body').toggleClass('menu-active');
+            $(this).find('.fas').toggleClass('fa-angle-double-right fa-angle-double-left');
+        });
+
+        $('.present span').on('click', function(event){
+            $(this).parent().find('.desc').slideToggle();
+            $(this).toggleClass('present-active');
+            $(this).text() == $(this).data("close") ? $(this).text($(this).data("open")) : $(this).text($(this).data("close"));
+        });
+		
+		$(document).ready(function(){
+			  $(window).on('scroll',function(e){
+					$('.section').each(function(){
+						if($(window).scrollTop() >= $(this).offset().top) {
+							var id = $(this).attr('id');
+							$('#menu ul li a').removeClass('link-active');
+							$('a[href="#'+id+'"]').addClass('link-active');
+						}
+					}); 
+			  });
+			
+			// Add smooth scrolling to all links
+		  $("#menu ul li a").on('click', function(event) {
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+			  // Store hash
+			  var hash = this.hash;
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+				  
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+		        /* Menu link */
+        $('#menu ul li a').on('click',function(){
+            $('#menu ul').find('.link-active').removeClass('link-active');
+            $(this).addClass('link-active');
+        });
+        /* Dropdown 
+        $('.dropdown').click(function () {
+            $(this).attr('tabindex', 1).focus();
+            $(this).toggleClass('active');
+            $(this).find('.dropdown-menu').slideToggle(300);
+        });
+        $('.dropdown').focusout(function () {
+            $(this).removeClass('active');
+            $(this).find('.dropdown-menu').slideUp(300);
+        });
+        $('.dropdown .dropdown-menu li').click(function () {
+            $(this).parents('.dropdown').find('span').text($(this).text());
+            $(this).parents('.dropdown').find('input').attr('value', $(this).data('id'));
+            var id = $(this).parents('.dropdown').find('input').val();
+            console.log(id);
+            $('.tabs .tabs-content .tabs-content-inner').hide();
+            $('div.' + id).show('fast',function(){
+                $(this).find('.field-counter').each(function(){
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 1500,
+                        easing: 'swing',
+                        step: function(now) {
+                        $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+            });
+        });
+		*/       
+    </script>
+    
+</body>
+</html>
