@@ -612,10 +612,13 @@
 						En dashboard visualiserar data genom olika grafer och diagram. Utmaningen med datavisualisering är att välja rätt diagram till rätt information. Väljer man inte korrekt, finns det stora risker att datavisualiseringen skapar förvirring och misuppfattningar hos användaren. Vill man jämföra värden statiskt eller över tid, passar det mest att använda stapeldiagram respektive linjediagram. Vill man istället se kompositionen statiskt eller över tid, är det bättre att använda cirkeldiagram respektive staplade diagramtyper där man tydligt ser uppdelningen. Allt detta beror dessutom på hur många variabler vill man visa i ett diagram. Har man för mycket på ett diagram kan det bli rent överflöde av information och diagrammet blir otydligt för användaren. Därför kan man diskutera om resultaten har varit tillräckligt tydlig och användarvänlig.
 						<br>
 						<br>
-						När man jobbar med dataanalys, oftast innebär det att man jobbar med SQL-frågor. SQL är det främsta frågespråket som används vid databashantering - för att hämta, modifiera och radera data. Ett exempel där SQL används är när man applicerar ett filter till analysen. Komplexa SQL-frågor kan ha prestandaeffekter, det vill säga det kan ta lång tid innan systemet söker fram och presenterar resultaten i analysen eller dashboarden. Sökningar i databaser med mycket data kan också påverka prestanda. 
+						När man jobbar med dataanalys, oftast innebär det att man jobbar med SQL-frågor. SQL är det främsta frågespråket som används vid databashantering - för att hämta, modifiera och radera data. Ett exempel där SQL används är när man applicerar ett filter till analysen. Komplexa SQL-frågor kan ha prestandaeffekter, det vill säga det kan ta lång tid innan systemet söker fram och presenterar resultaten i analysen eller dashboarden. Sökningar i databaser med mycket data kan också påverka prestanda. Detta projekt är inget undantag - det tog relativt lång tid för att resultaten skulle visats fram, och ur min okunskap då kunde jag inte lösa helt detta problem med prestanda.
 						<br>
 						<br>
-						SQL kan också vara anledningen till felkällorna i resultaten. Det kan ha varit misförstånd av variabler, felaktiga beräkningar eller ren kunskapsbrist från min sida.
+						SQL kan också vara anledningen till felkällorna i resultaten. Det kan ha varit misförstånd av variabler, felaktiga beräkningar eller ren inkompetens från min sida. En del felkällor i resultaten uppstod på grund av systeminställningar - i detta fall hade företaget en annan tidszon inställt i systemet, vilket påverkar resultaten rejält.
+						<br>
+						<br>
+						Man kan alltid diskutera om man kunde levererat bättre resultat. Till detta projekt har jag fått tillgång till systemet via ett konto som hade begränsat access till analysverktyget, just av säkershets- och integritetsskäl. En del justeringar krävde andra behörigheter som mitt konto inte hade, exempelvis att ändra tidformatet till dag-månad-år, istället för att visa det fullständiga formatet. Man skulle alltid kunnat förfina resultatet ännu mer.
                     </p>
                 </div>
 				</div>
@@ -624,7 +627,7 @@
 			<div class="main-section">
                 <div class="section" id="conclusion">
                     <h2>Slutsats</h2>
-                    <p>Inom den moderna marknadsföringsbranschen där marknadsföring har blivit i största delen digital och automatiserad, är det viktigt med rapportering och analys. Detta för att kunna se om marknadsföringen har varit effektiv. En dashboard kan underlätta rapportering- och analysprocessen genom att ge marknadsförare möjligheten att interaktivt utforska data i realtid.</p>
+                    <p>Inom den moderna marknadsföringsbranschen där marknadsföring har blivit i största delen digital och automatiserad, är det viktigt med rapportering och analys. Detta för att kunna se om marknadsföringen har varit effektiv. En dashboard kan underlätta rapportering- och analysprocessen genom att ge marknadsförare möjligheten att interaktivt utforska data i realtid. Detta arbete har visat processen av att producera en dashboard i analysverktyget Insight, inbyggt i systemet Oracle Eloqua.</p>
                 </div>
 				</div>
     
