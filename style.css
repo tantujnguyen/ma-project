@@ -168,11 +168,15 @@ p {
   border: 3px solid rgba(255, 99, 132, 0.7);
 }
 
-#background ul, #method ul {
+.section ul {
   padding: 10px 0 0 20px;
 }
-#background ul li, #method ul li {
-  padding-bottom: 10px;
+.section ul li {
+  margin-bottom: 10px;
+}
+
+#references ul {
+	padding: 0;
 }
 
 /* Menu */
@@ -203,6 +207,7 @@ p {
   border-right: 1px solid #bababa;
   transition: all 0.3s;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 #menu ul {
   opacity: 0;
