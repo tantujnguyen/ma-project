@@ -39,14 +39,21 @@
 				</li>
                 <li><a href="#method">Metod</a>
 					<ul class="sub-menu">
-						<li><a href="method-1">1 - Förstå</a></li>
-						<li><a href="method-2">2 - Designa</a></li>
-						<li><a href="method-3">3 - Testa</a></li>
-						<li><a href="method-4">4 - Optimera</a></li>
-						<li><a href="method-5">5 - Implementera</a></li>
+						<li><a href="#method-1">1 - Förstå</a></li>
+						<li><a href="#method-2">2 - Designa</a></li>
+						<li><a href="#method-3">3 - Testa</a></li>
+						<li><a href="#method-4">4 - Optimera</a></li>
+						<li><a href="#method-5">5 - Implementera</a></li>
 					</ul>
 				</li>
-                <li><a href="#result">Resultat</a></li>
+                <li><a href="#result">Resultat</a>
+					<ul class="sub-menu">
+						<li><a href="#result-1">1 - Overview</a></li>
+						<li><a href="#result-2">2 - Deliverability</a></li>
+						<li><a href="#result-3">3 - Opens</a></li>
+						<li><a href="#result-4">4 - Clicks</a></li>
+					</ul>
+				</li>
                 <li><a href="#discussion">Diskussion</a></li>
                 <li><a href="#conclusion">Slutsats</a></li>
                 <li><a href="#references">Referenser</a></li>
@@ -311,12 +318,15 @@
                 </div>
 
                 <!-- Result -->
-                <div class="section" id="result">
-                    <h2>Resultat</h2>
+                <div class="main-section">
+					<div class="section" id="result">
+					<h2>Resultat</h2>
                     <p>
                         Nedan presenteras och redovisas resultatet av arbetet i form av skärmdumpar av dashboarden. 
                         Dashboard som skapades består av 4 sidor med fliknamn: <strong>Overview</strong>, <strong>Deliverability</strong>, <strong>Opens</strong>, och <strong>Clicks</strong>. Presenterat är resultaten från en kampanj.
                     </p>
+					</div>
+
                     <br>
                     <!-- START Dropdowns -->
                     <!--<div class="dropdown">
@@ -395,6 +405,7 @@
                     </div> -->
                     <br>
                     <!-- OVERVIEW -->
+					<div class="section" id="result-1">
                     <h3>1 - Overview</h3>
 					<p>
 						Tanken med första fliken <strong>Overview</strong> är att visa en översikt över det som är viktigast, visa trenderna, samt att ge användaren möjlighet att filtrera data som ska presenteras i dashboard. Resultaten uppdateras enligt användarens val i infopanelsfrågan.
@@ -469,8 +480,10 @@
                             En tabell som sammanfattar resultaten mer detaljerat.
                         </div>
                     </div>
+					</div>
 					<br>
                     <!-- DELIVERABILITY -->
+					<div class="section" id="result-2">
                     <h3>2 - Deliverability</h3>
 					<p>
 						Andra sidan <strong>Deliverability</strong> presenterar resultaten enbart kring leverensbarheten. Detta ger möjligheten för användaren att fokusera på att analysera leverensbarheten när det behövs.
@@ -510,7 +523,9 @@
                         </div>
                     </div>
                     <!-- OPENS -->
+					</div>
 					<br>
+					<div class="section" id="result-3">
                     <h3>3 - Opens</h3>
 					<p>Nästa sida <strong>Opens</strong> presenterar data kring öppningar och möjliggör analys baserad på vilken tid/dag eller enheter som utskicken är mest öppnade. </p>
                     <div class="present">
@@ -550,8 +565,10 @@
 							<p>Till vänster finnes en cirkeldiagram som presenterar unika öppningar på olika typer av enheter. Till höger en stapeldiagram som visar unika öppningar i olika webbläsare sorterat baserat på det totala antalet skickade mail.</p>
                         </div>
                     </div>
+					</div>
 					<br>
                     <!-- CLICKS -->
+					<div class="section" id="result-4">
                     <h3>4 - Clicks</h3>
 					<p>Fjärde och sista fliken <strong>Clicks</strong> visar data kring klick.</p>
                     <div class="present">
@@ -572,10 +589,12 @@
 							<p>En enkel stapeldiagram som presenterar mest klickade länkar, både totala och unika.</p>
                         </div>
                     </div>
+					</div>
 
                 </div>
 
                 <!-- Discussion -->
+			<div class="main-section">
                 <div class="section" id="discussion">
                     <h2>Diskussion</h2>
                     <p>
@@ -585,18 +604,20 @@
                         Jag hade hoppat fram och tillbaka mellan stegen
 
                     </p>
-                    <h3></h3>
-                    <p></p>
                 </div>
+				</div>
                 
                 <!-- Conclusion -->
+			<div class="main-section">
                 <div class="section" id="conclusion">
                     <h2>Slutsatser</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolores pariatur explicabo corrupti nemo quam necessitatibus quos, animi mollitia consequuntur quidem quia, quasi dolore. Aspernatur deleniti optio earum sint magnam.</p>
                 </div>
+				</div>
     
                 <!-- References -->
-                <div class="section" id="references">
+                <div class="main-section" >
+					<div class="section" id="references">
                     <h2>Referenser</h2>
                     <ul>
 						 <li>Bakusevych, Taras. 17 Jul 2018. 10 rules for better dashboard design <a href="https://uxplanet.org/10-rules-for-better-dashboard-design-ef68189d734c" target="_blank">https://uxplanet.org/10-rules-for-better-dashboard-design-ef68189d734c</a></li>
@@ -607,6 +628,7 @@
 						<li>Oracle. 2015, 2018. Fusion Middleware User's Guide for Oracle Business Intelligence Enterprise Edition <a href="https://docs.oracle.com/middleware/bi12214/biee/BIEUG/toc.htm" target="_blank">https://docs.oracle.com/middleware/bi12214/biee/BIEUG/toc.htm</a></li>
                         <li>Oracle. 2019. Oracle Eloqua: Drive Dynamic Journeys <a href="https://www.oracle.com/se/marketingcloud/products/marketing-automation/" target="_blank">https://www.oracle.com/se/marketingcloud/products/marketing-automation/</a></li>
                     </ul>
+					</div>
                 </div>
             </div>
             <footer>
